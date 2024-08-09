@@ -1,92 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FortiGuardian Consulting</title>
-    <link rel="icon" href="assets/img/favicon1.png">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <title>FortiGuardian | Home</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">FortiGuardian</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#" data-target="home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-target="about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-target="services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-target="contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Sections -->
-    <section id="home" class="section vh-100" style="background: url('assets/img/cyber-security.jpg') no-repeat center center/cover;">
-        <div class="container text-center text-white">
-            <h1 class="display-4">Simplifying I.T, Fortifying Security</h1>
-        </div>
-    </section>
+<!-- Hamburger Menu Icon -->
+<span id="hamburger" style="font-size:30px;cursor:pointer;position:fixed;top:15px;left:15px;color:white;z-index:3;" onclick="openNav()">&#9776;</span>
 
-    <section id="about" class="section vh-100 bg-dark text-white d-none">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At FortiGuardian Consulting, we specialize in delivering cutting-edge software and cybersecurity solutions...</p>
-        </div>
-    </section>
+<!-- Side Navigation -->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="nav-logo-container">
+        <img src="assets/img/favicon1.png" alt="FortiGuardian Logo" class="nav-logo">
+    </div>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
 
-    <section id="services" class="section vh-100 bg-dark text-white d-none">
-        <div class="container">
-            <h2>Our Services</h2>
-            <pre id="terminal">
-                <!-- Terminal-style content will be added here by JS -->
-            </pre>
-        </div>
-    </section>
+<!-- Home Section -->
+<section id="home">
+  <div class="logo-container">
+      <img src="assets/img/hero-bg3.png" alt="FortiGuardian Logo" class="watermark-logo">
+  </div>
+  <div class="typing-container">
+      <span class="constant-text">@ FortiGuardian Consulting,</span><br />
+      <span class="constant-text">We </span>
+      <span class="typed-text"></span><span class="cursor">|</span>
+  </div>
+</section>
 
-    <section id="contact" class="section vh-100 bg-dark text-white d-none">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row gy-3">
-                    <div class="col-md-6">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" rows="5" class="form-control" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </div>
-            </form>
+<!-- Main Content Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>FortiGuardian</span></strong>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-white">
-        <div class="container">
-            &copy; 2024 FortiGuardian. All rights reserved.
-        </div>
-    </footer>
+<!-- Link to the external JavaScript file -->
+<script src="assets/js/scripts.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
