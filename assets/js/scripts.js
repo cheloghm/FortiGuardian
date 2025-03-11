@@ -1,46 +1,44 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("hamburger").style.display = "none"; // Hide hamburger
+// Typing effect
+const textArray = ["Simplifying I.T", "Fortifying Security"];
+let textIndex = 0;
+let charIndex = 0;
+const typedText = document.getElementById("typed-text");
+
+function typeText() {
+  if (charIndex < textArray[textIndex].length) {
+    typedText.innerHTML += textArray[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeText, 150);
+  } else {
+    setTimeout(eraseText, 2000);
+  }
 }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("hamburger").style.display = "block"; // Show hamburger
+function eraseText() {
+  if (charIndex > 0) {
+    typedText.innerHTML = textArray[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseText, 100);
+  } else {
+    textIndex = (textIndex + 1) % textArray.length;
+    setTimeout(typeText, 500);
+  }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const typedTextSpan = document.querySelector(".typed-text");
-    const cursorSpan = document.querySelector(".cursor");
+document.addEventListener("DOMContentLoaded", typeText);
 
-    const textArray = ["simplify I.T,", "fortify Security."];
-    const typingDelay = 200;
-    const erasingDelay = 100;
-    const newTextDelay = 2000; // Delay between current and next text
-    let textArrayIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-        if (charIndex < textArray[textArrayIndex].length) {
-            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, typingDelay);
-        } else {
-            setTimeout(erase, newTextDelay);
-        }
-    }
-
-    function erase() {
-        if (charIndex > 0) {
-            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, erasingDelay);
-        } else {
-            textArrayIndex++;
-            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-            setTimeout(type, typingDelay + 1100);
-        }
-    }
-
-    // Initial call to start the typing effect
-    type();
-});
+// Services tab functionality
+function openService(evt, serviceName) {
+  let i, services, tablinks;
+  services = document.getElementsByClassName("service");
+  for (i = 0; i < services.length; i++) {
+    services[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("w3-dark-grey");
+  }
+  document.getElementById(serviceName).style.display = "block";
+  evt.currentTarget.classList.add("w3-dark-grey");
+}
+document.getElementById("defaultOpen").click();

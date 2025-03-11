@@ -1,53 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FortiGuardian | Home</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Link to Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FortiGuardian Consulting</title>
+
+  <!-- W3.CSS Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/img/logoW.png">
 </head>
 <body>
 
-<!-- Hamburger Menu Icon -->
-<span id="hamburger" style="font-size:30px;cursor:pointer;position:fixed;top:15px;left:15px;color:white;z-index:3;" onclick="openNav()">&#9776;</span>
-
-<!-- Side Navigation -->
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="nav-logo-container">
-        <img src="assets/img/favicon1.png" alt="FortiGuardian Logo" class="nav-logo">
-    </div>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+<!-- Navigation Bar -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3"><a href="#" class="w3-button w3-block w3-black">HOME</a></div>
+    <div class="w3-col s3"><a href="#about" class="w3-button w3-block w3-black">ABOUT</a></div>
+    <div class="w3-col s3"><a href="#services" class="w3-button w3-block w3-black">SERVICES</a></div>
+    <div class="w3-col s3"><a href="#contact" class="w3-button w3-block w3-black">CONTACT</a></div>
+  </div>
 </div>
 
-<!-- Home Section -->
-<section id="home">
-  <div class="logo-container">
-      <img src="assets/img/hero-bg3.png" alt="FortiGuardian Logo" class="watermark-logo">
+<!-- Hero Section -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <img src="assets/img/logoW-bg.png" alt="FortiGuardian Logo" class="logo">
+    <h1 class="w3-text-white"><span id="typed-text"></span></h1>
   </div>
-  <div class="typing-container">
-      <span class="constant-text">@ FortiGuardian Consulting,</span><br />
-      <span class="constant-text">We </span>
-      <span class="typed-text"></span><span class="cursor">|</span>
-  </div>
-</section>
+</header>
 
-<!-- Main Content Footer -->
-<footer id="footer">
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong><span>FortiGuardian</span></strong>
-        </div>
+<!-- About Section -->
+<div class="w3-container w3-light-grey w3-padding-64" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center">About Us</h2>
+    <p>
+      At <strong>FortiGuardian Consulting</strong>, we specialize in <strong>cutting-edge cybersecurity, software development, and cloud engineering</strong> to 
+      protect businesses and streamline IT operations. With prsence in <strong>The USA & The UK</strong>, we help companies <strong>stay ahead of cyber threats, ensure regulatory compliance, 
+      and optimize technology for growth.</strong>
+    </p>
+
+    <h3>Why Businesses Choose Us</h3>
+    <ul class="w3-ul">
+      <li><strong>Expert-Led Solutions:</strong> Our team of <strong>cybersecurity specialists, software engineers, and cloud architects</strong> brings years of experience securing businesses across <strong>finance, healthcare, government, and technology sectors</strong>.</li>
+      <li><strong>Proactive Cybersecurity & Compliance:</strong> We <strong>detect vulnerabilities before attackers do</strong> and ensure <strong>compliance with industry standards</strong> like <strong>ISO 27001, HIPAA, PCI-DSS, and NIST</strong>.</li>
+      <li><strong>Tailored IT Strategies:</strong> No two businesses are the same. We design <strong>bespoke IT solutions</strong> that enhance <strong>security, scalability, and efficiency</strong>, ensuring <strong>your business thrives in a digital-first world</strong>.</li>
+      <li><strong>Trusted by Enterprises Nationwide:</strong> From <strong>small businesses to Fortune 500 companies</strong>, we have helped organizations <strong>fortify IT security, streamline operations, and stay ahead of evolving threats</strong>.</li>
+    </ul>
+
+    <h3>Our Commitment to Excellence</h3>
+    <ul class="w3-ul">
+      <li>🔹 <strong>Security First</strong> – Your business is protected with <strong>top-tier cybersecurity</strong> at every level.</li>
+      <li>🔹 <strong>Innovation-Driven</strong> – We leverage <strong>emerging technologies</strong> to build <strong>future-ready IT solutions</strong>.</li>
+      <li>🔹 <strong>Integrity & Trust</strong> – We are <strong>transparent, reliable, and results-driven</strong>.</li>
+      <li>🔹 <strong>Client Success Focused</strong> – Your growth and security are <strong>our top priorities</strong>.</li>
+    </ul>
+
+    <!-- Contact Us Button -->
+    <div class="w3-center w3-padding-32">
+      <a href="#contact" class="w3-button w3-black w3-round w3-large">📩 Contact Us for Partnership</a>
     </div>
+  </div>
+</div>
+
+<!-- Services Section -->
+<div class="w3-container w3-padding-64" id="services">
+  <div class="w3-content" style="max-width:800px">
+    <h2 class="w3-center">What We Do Best</h2>
+    <p class="w3-center w3-large">We deliver world-class IT and cybersecurity solutions to safeguard businesses, streamline operations, and drive digital transformation.</p>
+    
+    <!-- Service Categories -->
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openService(event, 'cybersecurity');" id="defaultOpen">
+        <div class="w3-col s4 tablink"><i class="w3-xlarge w3-margin-right bi bi-shield-lock"></i>Cybersecurity</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openService(event, 'software');">
+        <div class="w3-col s4 tablink"><i class="w3-xlarge w3-margin-right bi bi-cloud"></i>Software & Cloud</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openService(event, 'business-it');">
+        <div class="w3-col s4 tablink"><i class="w3-xlarge w3-margin-right bi bi-briefcase"></i>Business I.T. Solutions</div>
+      </a>
+    </div>
+
+    <!-- Cybersecurity Services -->
+    <div id="cybersecurity" class="w3-container service w3-padding-48 w3-card">
+      <h3><i class="bi bi-shield-lock"></i> Cybersecurity Services</h3>
+      <p>Cyber threats are evolving—your defenses should too. We deliver cutting-edge security solutions to protect your data, infrastructure, and reputation.</p>
+      <ul class="w3-ul">
+        <li><i class="bi bi-bug-fill"></i> <strong>Penetration Testing & Ethical Hacking</strong> – Identify and eliminate vulnerabilities before hackers exploit them.</li>
+        <li><i class="bi bi-exclamation-octagon-fill"></i> <strong>Incident Response & Threat Intelligence</strong> – Rapid detection and remediation of cyber attacks.</li>
+        <li><i class="bi bi-cloud-check-fill"></i> <strong>Cloud Security & DevSecOps</strong> – Secure your AWS, Azure, and GCP environments while integrating security into CI/CD pipelines.</li>
+        <li><i class="bi bi-file-earmark-lock-fill"></i> <strong>Compliance & Risk Management</strong> – Ensure HIPAA, PCI-DSS, ISO 27001, and NIST compliance with proactive security strategies.</li>
+        <li><i class="bi bi-lock-fill"></i> <strong>Zero Trust Security Architecture</strong> – Implement next-gen security frameworks to block unauthorized access.</li>
+      </ul>
+    </div>
+
+    <!-- Software & Cloud Engineering -->
+    <div id="software" class="w3-container service w3-padding-48 w3-card">
+      <h3><i class="bi bi-cloud"></i> Software & Cloud Engineering</h3>
+      <p>We build and optimize powerful, scalable, and secure software and cloud solutions tailored for your business needs.</p>
+      <ul class="w3-ul">
+        <li><i class="bi bi-code-slash"></i> <strong>Enterprise Software Development</strong> – Custom-built software to enhance business efficiency and scalability.</li>
+        <li><i class="bi bi-cloud-upload-fill"></i> <strong>Cloud Infrastructure & DevOps</strong> – Seamless deployment and cloud transformation on AWS, Azure, and GCP.</li>
+        <li><i class="bi bi-graph-up-arrow"></i> <strong>AI & Data Security</strong> – Implement AI-driven threat detection, risk mitigation, and business intelligence solutions.</li>
+        <li><i class="bi bi-shield-check"></i> <strong>Application Security & Secure Coding Practices</strong> – Prevent security flaws at the code level before they reach production.</li>
+      </ul>
+    </div>
+
+    <!-- Business IT Solutions -->
+    <div id="business-it" class="w3-container service w3-padding-48 w3-card">
+      <h3><i class="bi bi-briefcase"></i> Business I.T. Solutions</h3>
+      <p>Empowering businesses with optimized IT strategies, managed services, and future-proof technology.</p>
+      <ul class="w3-ul">
+        <li><i class="bi bi-lightbulb"></i> <strong>IT Strategy & Digital Transformation Consulting</strong> – Future-proof your business with expert-led IT roadmaps and innovation strategies.</li>
+        <li><i class="bi bi-tools"></i> <strong>Managed IT Services</strong> – Let us handle your IT infrastructure while you focus on growth.</li>
+        <li><i class="bi bi-shield-exclamation"></i> <strong>Disaster Recovery & Business Continuity Planning</strong> – Ensure business resilience in case of cyber threats or system failures.</li>
+        <li><i class="bi bi-person-check"></i> <strong>Cybersecurity Training & Employee Awareness</strong> – Equip your team with best security practices to prevent human-driven cyber risks.</li>
+      </ul>
+    </div>
+
+    <!-- Industries We Serve -->
+    <div class="w3-container w3-padding-48 w3-card w3-light-grey">
+      <h3><i class="bi bi-building"></i> Industries We Serve</h3>
+      <p>We partner with businesses across diverse industries, securing and optimizing their IT operations.</p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <ul class="w3-ul">
+            <li><i class="bi bi-bank"></i> <strong>Finance & Banking</strong> – Secure financial data & prevent fraud.</li>
+            <li><i class="bi bi-hospital"></i> <strong>Healthcare & Life Sciences</strong> – HIPAA-compliant security & digital transformation.</li>
+            <li><i class="bi bi-cart"></i> <strong>E-commerce & Retail</strong> – Fraud prevention, secure payments, and customer data protection.</li>
+          </ul>
+        </div>
+        <div class="w3-half">
+          <ul class="w3-ul">
+            <li><i class="bi bi-globe"></i> <strong>Government & Public Sector</strong> – Compliance, cybersecurity, and cloud adoption.</li>
+            <li><i class="bi bi-cpu"></i> <strong>Tech & SaaS Companies</strong> – DevSecOps, cloud security, and scalable infrastructure.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="w3-center w3-padding-32">
+      <a href="#contact" class="w3-button w3-black w3-round w3-large">📩 Let's Secure & Transform Your Business</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64 w3-light-grey" id="contact">
+  <div class="w3-content" style="max-width:800px">
+    <h2 class="w3-center">Get in Touch</h2>
+    <p class="w3-center w3-large">We're here to help. Reach out to us for partnerships, consultations, or general inquiries.</p>
+
+    <!-- Contact Info -->
+    <div class="w3-row-padding w3-margin-top">
+      
+      <!-- US Office -->
+      <div class="w3-half w3-padding">
+        <h3><i class="bi bi-geo-alt"></i> US Office</h3>
+        <p><strong>📍 Address:</strong><br>1200 Cassidy Hills, Prosper, Texas 75078</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:contact@fortiguardian.com">contact@fortiguardian.com</a></p>
+        <p><strong>📞 Phone:</strong> +1 234 567 8901</p>
+      </div>
+
+      <!-- UK Office -->
+      <div class="w3-half w3-padding">
+        <h3><i class="bi bi-geo-alt"></i> UK Office</h3>
+        <p><strong>📍 Address:</strong><br>52 Imperial Way, Ashford, Kent. TN23 5HB, UK</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:contact@fortiguardian.com">contact@fortiguardian.com</a></p>
+        <p><strong>📞 Phone:</strong> +44 1234 567 890</p>
+      </div>
+
+    </div>
+
+    <!-- Google Maps -->
+    <div class="w3-margin-top w3-card w3-white">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.050056508607!2d-96.800937!3d33.239282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3c78c50846b3%3A0x9dff3ff9a08c3b!2s1200%20Cassidy%20Hills%2C%20Prosper%2C%20TX%2075078%2C%20USA!5e0!3m2!1sen!2s"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="w3-margin-top w3-card w3-white w3-padding">
+      <h3 class="w3-center"><i class="bi bi-envelope"></i> Send Us a Message</h3>
+      <form action="#" method="POST">
+        <p><input class="w3-input w3-border" type="text" placeholder="Your Name" required></p>
+        <p><input class="w3-input w3-border" type="email" placeholder="Your Email" required></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required></p>
+        <p><textarea class="w3-input w3-border" placeholder="Your Message" required rows="5"></textarea></p>
+        <p class="w3-center">
+          <button class="w3-button w3-black w3-round" type="submit">📩 Send Message</button>
+        </p>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy; 2025 FortiGuardian Consulting</p>
 </footer>
 
-<!-- Link to the external JavaScript file -->
+<!-- JavaScript -->
 <script src="assets/js/scripts.js"></script>
 
 </body>
