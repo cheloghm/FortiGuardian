@@ -38,6 +38,22 @@ body, html {
   }
 }
 
+/* Typing Cursor Effect */
+.cursor {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+  font-size: inherit;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 /* Contact Us Button Styling */
 .w3-button {
   padding: 12px 24px;
